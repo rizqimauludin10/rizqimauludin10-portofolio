@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizqi Mauludin Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+     
+            <a href="#" class="logo">Rizqi Mauludin</a>
+            
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Download CV</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+     
+     
+            <div class="tombol">
+                &#9776;
+            </div>
+     
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <header>
+            <div class="foto">
+                <img src="foto.png"/>
+                <h1>Rizqi Mauludin</h1>
+                <p>@rizqimauludin_</p>
+    
+            </div>
+        </header>       
+    </div>
+
+    <div class="overview">
+        <article style="text-align: center;">
+            <h2><i class="fas fa-user-alt"></i> About me</h2>
+            <p>
+                Hi, saya adalah programmer yang berdomisili di Surabaya.
+                Saat ini sedang belajar pemrograman.
+            </p>
+        </article>
+
+        <div style="max-width: 600px; margin: 3em auto">
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Pengalaman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>HTML (Expert)</li>
+                                <li>CSS (Beginner)</li>
+                                <li>Javascript (Beginner)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Freelancer di Internet</li>
+                                <li>Freelancer di Internet</li>
+                                <li>Freelancer di Internet</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="location">
+        <h1>Alamat</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jKtbnLoYJe8?si=4ygpOR-i_nSXVEqV&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+    
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2024 Rizqi Mauludin.</p>
+    </footer>
+
+    <script type="text/javascript">
+		// deklarasi tombol dan menu
+		const tombol = document.querySelector('.tombol');
+		const menu = document.querySelector('.menu');
+ 
+		// membuat event click
+		// pada saat tombol di click, tambahkan class aktif pada class menu
+		// saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+		tombol.addEventListener('click', () => {
+			menu.classList.toggle('aktif');
+		});
+	</script>
+</body>
+
+</html>
