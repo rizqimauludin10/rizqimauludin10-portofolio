@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #eef0f1;
+}
+
+.navbar{
+	background: #212121;
+	margin: 0;
+	padding: 20px 30px;
+}
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+ 
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.tombol{
+    display: none;
+	color: white;
+	font-size: 14pt;			
+}
+
+.tombol:hover{
+    cursor: pointer;
+}
+
+
+.menu{
+    
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.menu li a:hover{
+	color: #1889e5;
+    transition: 0.2s;
+}
+ 
+ 
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #212121;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
+}
+
+
+
+.main {
+	background-image: url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+.overview {
+	background-image: linear-gradient(to left, rgb(242, 235, 25), rgb(224, 146, 68));
+	height: 500px;
+	margin-top: -22px;
+	padding: 20px;
+}
+
+
+.foto{
+    padding: 20px;
+    text-align: center;
+}
+
+.foto img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+.location iframe{
+	display: block;
+	margin:auto;
+}
